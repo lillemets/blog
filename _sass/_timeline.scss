@@ -1,0 +1,46 @@
+.timeline-body {
+  position: relative;
+  background-color: none;
+  border-radius: 0 $rounded-borders $rounded-borders 0;
+  padding: 5px 0;
+
+  &:after {
+    // Left Border
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: $secondary;
+    position: absolute;
+    left: -4px;
+    top: 0;
+  }
+
+  .timeline-item {
+    position: relative;
+
+    &:after {
+      // Circle
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 3px solid $primary;
+      background-color: $light;
+      position: absolute;
+      left: -12px;
+      top: 4px;
+      z-index: 10;
+    }
+
+    .content {
+      margin: 10px 20px;
+      padding-bottom: 0px;
+
+      .date {
+        margin-top: -5px;
+        margin-bottom: 5px;
+        color: #6c757d;
+      }
+    }
+  }
+}
