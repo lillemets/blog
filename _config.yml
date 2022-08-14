@@ -1,7 +1,7 @@
 # Site settings
 title               : Oijee!
 description         : I'm not sure why but somehow you've ended up on this random personal website. This is where I post some of my thoughts, stories of my doings and goings and showcase things I create.
-baseurl             : ""
+baseurl             : "/blog"
 repository          : lillemets/blog
 
 # Navbar settings
